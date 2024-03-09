@@ -13,9 +13,9 @@ export function ButtonSolid(props) {
         backgroundColor: "black",
         color: "white",
         padding: "0.5rem 1rem",
-        borderRadius: "0.2rem",
+        borderRadius: "10px",
         cursor: "pointer",
-        width: "100%",
+        height: "50px",
       }}
     >
       {props.text || "Solid"}
@@ -29,13 +29,12 @@ export function ButtonOutline(props) {
       onClick={props.onClick}
       style={{
         all: "unset",
-        backgroundColor: "transparent",
-        color: "black",
-        border: "2px solid black",
+        backgroundColor: "green",
+        color: "white",
         padding: "0.5rem 1rem",
-        borderRadius: "0.2rem",
+        borderRadius: "10px",
         cursor: "pointer",
-        width: "100%",
+        height: "50px",
       }}
     >
       {props.text || "Outline"}
@@ -43,21 +42,21 @@ export function ButtonOutline(props) {
   );
 }
 
-export function ButtonGhost(props) {
+export function ButtonEye(props) {
   return (
     <button
       onClick={props.onClick}
       style={{
         all: "unset",
-        width: "fit-content",
-        backgroundColor: "transparent",
-        color: "black",
-        padding: "0.5rem 1rem",
-        borderRadius: "0.2rem",
+        backgroundColor: "#366cbf",
+        color: "white",
+        textAlign: "center",
+        borderRadius: "10px",
         cursor: "pointer",
+        width: "40px",
       }}
     >
-      {props.text || "Ghost"}
+      {props.text || "Solid"}
     </button>
   );
 }
