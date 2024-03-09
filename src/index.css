@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.all {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1pc;
+  padding: 1rem;
+}
+
+.draggable {
+  cursor: pointer;
+  width: fit-content;
+  z-index: 1;
+}
+
+.draggable:hover {
+  background-color: 1px black;
+}
+
+.MemeCard {
+  width: 500px;
+  border: 1px black;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  max-width: 450px;
+  word-wrap: break-word;
+}
+
+textarea {
+  height: 50px;
+  max-width: 300px;
+  text-indent: 0.5pc;
+}
+
+@media only screen and (max-width: 800px) {
+  .all {
+    flex-direction: column;
+  }
+}
